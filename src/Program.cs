@@ -1,19 +1,15 @@
 ﻿using System;
+using Ucu.Poo.Restaurant;
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Programa principal.
-    /// </summary>
-    public static class Program
+    /// <summary>Programa principal.</summary>
+    class Program
     {
-        /// <summary>
-        /// Punto del entrada al programa.
-        /// </summary>
-        public static void Main()
+        static void Main(string[] args)
         {
-            // Dish burger = new Dish("Burger", 5.99, false);
-            // Dish salad = new Dish("Salad", 4.99, true);
+            Dish burger = new Dish("Burger", 5.99, false); 
+            Dish salad = new Dish("Salad", 4.99, true); 
             // Menu menu = new Menu();
             // menu.AddDish(burger);
             // menu.AddDish(salad);
@@ -23,11 +19,11 @@ namespace Ucu.Poo.Restaurant
             // oneTable.Ocupy();
             // waiter.TakeOrder(oneTable, burger);
             // Console.WriteLine(
-            //     $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied} " +
-            //     $"y la atiende: {waiter.Name}");
+            // $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied} " +
+            // $"y la atiende: {waiter.Name}");
             // oneTable.Free();
             // Console.WriteLine(
-            //     $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
+            // $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
         }
     }
 }
