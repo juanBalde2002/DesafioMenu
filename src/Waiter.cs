@@ -2,12 +2,43 @@ using System.Collections.Generic;
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Representa un mozo en el restaurante, encargado de atender mesas.
-    /// </summary>
+
     public class Waiter
     {
-        private List<Table> assignedTables = new List<Table>();
-        //hola
+      public string Name { get; set;}
+      public List<Table> AssignedTables { get; } = new List<Table>();
+
+
+      public Waiter(string name)
+      {
+          this.Name = name;
+      }
+
+      public void AssignTable(Table table)
+      {
+          if (table == null)
+          {
+              return;
+          }
+
+          if (!this.AssignedTables.Contains(table))
+          {
+              this.AssignedTables.Add(table);
+          }
+      }
+
+      public void TakeOrder(Table table, Dish dish)
+      {
+          if (table == null || dish == null)
+          {
+              return;
+          }
+
+          if (!this.AssignedTables.Contains(table))
+          {
+              return;
+          }
+
+          table.AddDish(dish);
+      }  
     }
-}
