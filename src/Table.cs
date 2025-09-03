@@ -10,8 +10,8 @@ namespace Ucu.Poo.Restaurant
     {
         //definicion de ATRIBUTOS
         private List<Dish> order = new List<Dish>();
-        private int Number { get; set; }
-        private bool IsOccupied { get; set; }
+        public int Number { get; set; }
+        public bool IsOccupied { get; set; }
         
         //definicion de METODOS
         public Table(int UnNumero, bool NoOcupada = false) //CONSTRUCTOR
