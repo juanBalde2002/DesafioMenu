@@ -44,6 +44,7 @@ namespace Ucu.Poo.Restaurant
 
             // Agrega el plato al pedido de la mesa
             table.AddToOrder(dish);
+            table.GetTotal();
         }
 
     }

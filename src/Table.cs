@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Data;
 
@@ -52,6 +53,7 @@ namespace Ucu.Poo.Restaurant
             {
                 total += platoActual.Precio;
             }
+            Console.WriteLine("El subtotal de esta mesa es: " + total);
             return total;
         }
 
