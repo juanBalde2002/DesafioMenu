@@ -39,12 +39,11 @@ namespace Ucu.Poo.Restaurant
                 return;
             }
 
-            // Marca la mesa como ocupada al tomar un pedido
-            table.Occupy();
+           table.Occupy();    // Ocupa la mesa
 
             // Agrega el plato al pedido de la mesa
             table.AddToOrder(dish);
-            table.GetTotal();
+           // table.GetTotal();
         }
 
     }
